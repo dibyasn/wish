@@ -60,6 +60,7 @@ h1,h2,h4{
     border-radius: 10px;
     background-image: url(img/gift-cover.jpg);
     background-size: cover;
+    box-shadow: 0 0 5px black;
 }
 #happy:hover{
     background-image: url("img/Sibu.jpeg");
