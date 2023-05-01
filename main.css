@@ -10,11 +10,12 @@ body{
     
 }
 h2{
-    width: 400px;
+    width: 350px;
    
 }
 h1,h2,h4{
  text-shadow: 0 0 2px black;
+ margin: auto auto;
 }
 #photo{
     width: 150px;
@@ -46,15 +47,15 @@ h1,h2,h4{
     margin-top: 50px;
 }
 .gift-title{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .gift.hint{
-    margin-top: 0; 
+  margin: 0 auto ;  
 }
 .gift-img{
-    margin: 0 auto;
-    width: 400px;
-    height: 400px;
+    margin: 20px auto;
+    width: 360px;
+    height: 360px;
     border: 6px solid white;
     border-radius: 10px;
     background-image: url(img/gift-cover.jpg);
