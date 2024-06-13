@@ -1,4 +1,4 @@
-body{
+body {
     text-align: center;
     font-family: 'Happy Monkey', cursive;
     background: #a2d2ff;
@@ -7,67 +7,113 @@ body{
     flex-direction: column;
     align-items: center;
     margin: 0;
-    
+    padding: 0;
 }
-h2{
-    width: 350px;
-   
+
+h2 {
+    width: 90%;
+    max-width: 350px;
 }
-h1,h2,h4{
- text-shadow: 0 0 2px black;
- margin: auto auto;
+
+h1, h2, h4 {
+    text-shadow: 0 0 2px black;
+    margin: 10px auto;
 }
-#photo{
-    width: 150px;
-    border: 2px solid#EFB0C9;
+
+#photo {
+    width: 40%;
+    max-width: 150px;
+    border: 2px solid #EFB0C9;
     border-radius: 50%;
     box-shadow: 0 0 5px black;
 }
-#bd-date{
-    margin: 20px 0 20px 0;
+
+#bd-date {
+    margin: 20px 0;
     background: #EFB0C9;
     padding: 5px 10px;
     border-radius: 2px;
     box-shadow: 0 0 2px black;
 }
-#bd-wish{
+
+#bd-wish {
     background: #EFB0C9;
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 2px black;
-    
+    width: 90%;
+    max-width: 600px;
 }
 
-#header{
+#header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-.gift-sec{
+
+.gift-sec {
     margin-top: 50px;
+    width: 90%;
+    max-width: 600px;
 }
-.gift-title{
+
+.gift-title {
     margin-bottom: 20px;
 }
-.gift.hint{
-  margin: 0 auto ;  
+
+.gift-hint {
+    margin: 0 auto;
 }
-.gift-img{
+
+.gift-img {
     margin: 20px auto;
-    width: 360px;
-    height: 360px;
+    width: 90%;
+    max-width: 360px;
+    height: 0;
+    padding-bottom: 100%; /* Maintain aspect ratio */
     border: 6px solid white;
     border-radius: 10px;
     background-image: url(img/gift-cover.jpg);
     background-size: cover;
     box-shadow: 0 0 5px black;
 }
-#happy:hover{
+
+#happy:hover {
     background-image: url("img/Sibu.jpeg");
 }
-#hasa:hover{
-    background-image: url("img/Sibu\ 4.jpg");
+
+#hasa:hover {
+    background-image: url("img/Sibu 4.jpg");
 }
-#look:hover{
-    background-image: url("img/Sibu\ 2.jpg");
+
+#look:hover {
+    background-image: url("img/Sibu 2.jpg");
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #photo {
+        width: 50%;
+    }
+
+    .gift-img {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h4 {
+        font-size: 1.2em;
+    }
+
+    #bd-date, #bd-wish {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    .gift-title {
+        font-size: 1em;
+    }
 }
